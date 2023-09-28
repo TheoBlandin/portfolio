@@ -82,15 +82,34 @@ nav li {
     transition: color 0.7s ease;
 }
 
-.pause-btn {
-    display: block;
+#btn-pause {
+    top: 70px;
+    left: 20px;
+    z-index: 90;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
 }
 
-.presentation {
-    position: relative;
+#btn-pause:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+#pause-icon {
+    width: 40px;
+    margin-right: 3px;
+}
+
+#sky {
     width: 85%;
-    margin: 0 auto;
-    padding-top: 50px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -110,7 +129,7 @@ nav li {
 
 .cloud {
     position: absolute;
-    animation: 50s cloud linear; /* randomize by js */
+    animation: cloud 50s linear; /* randomize by js */
     right: -500px;
     user-select: none;
     z-index: 1;
@@ -124,6 +143,10 @@ nav li {
     100% {
        right: 100vw;
     }
+}
+
+.paused {
+    animation-play-state: paused;
 }
 
 #triangle {
