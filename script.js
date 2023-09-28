@@ -35,7 +35,10 @@ function addCloud() {
     cloud.style.bottom = Math.floor(Math.random() * 100) + "%";
     cloud.style.width = (Math.floor(Math.random() * (450 - 150 + 1)) + 150).toString() + "px";
     cloud.style.opacity = 0.3 + Math.random() * 0.5;
-    cloud.style.animationDuration = (Math.floor(Math.random() * (50 - 15 + 1)) + 15).toString() + "s";
+    cloud.style.animationDuration = (Math.floor(Math.random() * (50 - 20 + 1)) + 20).toString() + "s";
+    cloud.addEventListener("animationend", () => {
+        sky.removeChild(cloud);
+    });
     sky.appendChild(cloud);
 }
 

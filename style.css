@@ -20,14 +20,14 @@ html {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 3.5em;
     font-weight: 500;
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -61,7 +61,6 @@ nav img {
     height: 64px;
     width: 64px;
     float: left;
-    /* filter: drop-shadow(-3px 3px 2px rgba(0, 0, 0, 0.1)); */
 }
 
 nav ul {
@@ -99,6 +98,10 @@ nav li {
     height: 100vh;
 }
 
+.presentation-title {
+    z-index: 90;
+}
+
 .pic {
     width: 40%;
     user-select: none;
@@ -107,20 +110,19 @@ nav li {
 
 .cloud {
     position: absolute;
-    animation: cloud 50s linear;
+    animation: 50s cloud linear; /* randomize by js */
     right: -500px;
-    transform: translateX(100%);
     user-select: none;
     z-index: 1;
 }
 
 @keyframes cloud {
     0% {
-        transform: translateX(0);
+        right: -500px;
     }
 
     100% {
-        transform: translateX(-125vw);
+       right: 100vw;
     }
 }
 
