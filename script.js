@@ -53,7 +53,6 @@ function addCloud() {
 
 function startClouds() {
     addCloud();
-    console.log("play clouds");
     document.getElementById("pause-icon").src="assets/pause.svg";
     document.getElementById("msg-pause").innerHTML = "Pauser l'animation"
     document.getElementById("btn-pause").removeEventListener("click", startClouds);
@@ -65,7 +64,6 @@ function startClouds() {
 }
 
 function stopClouds() {
-    console.log("stop clouds");
     document.getElementById("pause-icon").src="assets/play.svg";
     document.getElementById("msg-pause").innerHTML = "Lancer l'animation"
     document.getElementById("btn-pause").removeEventListener("click", stopClouds);

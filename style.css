@@ -9,10 +9,14 @@ body {
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root {
     --blue: #C6DEF1;
+    --yellow: #FAEDCB;
+    --dark: #394648;
+    --light: #ECECEC;
 }
 
 ::-webkit-scrollbar {
@@ -28,6 +32,13 @@ h1 {
 
 h2 {
     font-size: 2.5em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.8em;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -78,7 +89,7 @@ nav li {
     text-decoration: none;
     color: black;
     font-size: 20px;
-    font-weight: w400;
+    font-weight: 400;
     transition: color 0.7s ease;
 }
 
@@ -158,4 +169,83 @@ nav li {
 
 .body-page {
     height: 500px;
+}
+
+.section-title {
+    margin-left: 10%;
+}
+
+mark {
+    display: inline-block;
+    background-color: var(--yellow);
+    line-height: 0em;
+    padding-bottom: 0.5em;
+}
+
+.about-me {
+    /* margin: auto; */
+    width: 100%;
+    padding: 0% 5%;
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
+
+.post-it {
+    position: relative;
+    width: 50%;
+}
+
+.paragraph-about {
+    background-color: var(--dark);
+    width: calc(100% - 94px);
+    margin: auto;
+}
+
+.paragraph-about p {
+    color: var(--light);
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.6em;
+    padding: 30px 50px;
+    position: relative;
+}
+
+.scotchs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.scotch {
+    width: 130px;
+    height: 35px;
+    background-color: rgba(198, 222, 241, 0.70);
+    position: absolute;
+}
+
+.scotch-1, .scotch-3 {
+    transform: rotate(135deg);
+}
+
+.scotch-2, .scotch-4 {
+    transform: rotate(-135deg);
+}
+
+.scotch-1, .scotch-2 {
+    top: 0;
+}
+
+.scotch-3, .scotch-4 {
+    bottom: 0;
+}
+
+.scotch-1, .scotch-4 {
+    left: 0;
+}
+
+.scotch-2, .scotch-3 {
+    right: 0;
 }
