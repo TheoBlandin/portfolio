@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "title": "Weather Mood",
+            "icon": "assets/weather_mood.png",
+            "backgroundColor": "#EFF4FA",
+            "shortDescription": "Application mobile de mood tracking",
+            "techno": ["Flutter", "Inkscape", "Figma"]
+        },
+        {
+            "title": "NerdLister",
+            "icon": "assets/nerdlister.png",
+            "backgroundColor": "#2F2C46",
+            "shortDescription": "Site web servant à faire des classements",
+            "techno": ["Figma", "React", "CSS"]
+        },
+        {
+            "title": "Internet Coffee Pot",
+            "icon": "assets/icp.png",
+            "backgroundColor": "#161618",
+            "shortDescription": "Duo de sites web promulguant l’importance de l’accessibilité numérique",
+            "techno": ["HTML", "CSS", "JavaScript"]
+        },
+        {
+            "title": "Manger de saison",
+            "icon": "assets/manger_de_saison.png",
+            "backgroundColor": "#E4F2E4",
+            "shortDescription": "Application mobile de calendrier des fruits et légumes de saisons",
+            "techno": ["Flutter", "Inkscape", "Figma"]
+        }
+    ]
+}

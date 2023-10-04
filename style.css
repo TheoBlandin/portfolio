@@ -45,6 +45,12 @@ h3 {
     scroll-margin-top: 100px;
 }
 
+h4 {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0;
+}
+
 #full-height {
     height: 100%;
     width: 100%;
@@ -262,4 +268,69 @@ mark {
 }
 .venn {
     width: 90%;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px); /* 270px de largeur + 20px de marge */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.project {
+    width: 300px;
+    height: 450px;
+    background-color: var(--dark);
+    color: var(--light);
+    border-radius: 5px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.project:hover, .project:focus {
+    transform: scale(1.04);
+}
+
+.icon-project {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.description-project {
+    padding: 10px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.techno {
+    display: flex;
+    flex-direction: row;
+}
+
+.techno img {
+    height: 30px;
+    width: 30px;
+    margin: 3px 5px 3px 5px;
+}
+
+.info-box {
+    display: none; 
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -100%;
+    left: 20px;
+}
+
+.techno-box {
+    position: relative;
+}
+
+.techno-box:hover .info-box,
+.techno-box:focus .info-box {
+    display: block; 
 }
