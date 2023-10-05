@@ -13,21 +13,38 @@
     />
   </head>
   <body>
-    <div id="full-height">
+    <div id="sky">
       <nav id="nav">
         <div class="content-navbar">
           <div class="logo">
-            <a href="index.html"
-              ><img
+            <a href="index.html">
+              <img
                 src="assets/cloud.svg"
                 alt="Logo"
                 aria-label="Retour à la page d'acceuil"
             /></a>
           </div>
           <ul>
-            <li><a href="#about-title" class="nav-link">À propos de moi</a></li>
-            <li><a href="#projects-title" class="nav-link">Mes projets</a></li>
+            <li><a href="#about-me" class="nav-link">À propos de moi</a></li>
+            <li><a href="#my-projects" class="nav-link">Mes projets</a></li>
           </ul>
+
+          <button id="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+
+          <div id="collapse-menu">
+            <ul>
+              <li tabindex="0" id="close-menu">
+                <div class="cross-bar cross-1"></div>
+                <div class="cross-bar cross-2"></div>
+              </li>
+              <li><a href="#about-me" class="nav-link collapse">À propos de moi</a></li>
+              <li><a href="#my-projects" class="nav-link collapse">Mes projets</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -36,8 +53,10 @@
         <span id="msg-pause">Pauser l'animation</span>
       </button>
 
-      <div id="sky">
-        <img src="assets/pic.svg" class="pic" />
+      <div class="intro">
+        <div class="div-pic">
+          <img src="assets/pic.svg" class="pic" />
+        </div>
         <div class="presentation-title">
           <h1>Théo Blandin</h1>
           <h2>Développeur web et mobile</h2>
@@ -47,7 +66,7 @@
     <div class="body-page">
       <div id="triangle"></div>
 
-      <h3 id="about-title" class="section-title"><mark>À propos de moi</mark></h3>
+      <h3 id="about-me" class="section-title"><mark>À propos de moi</mark></h3>
       <div class="about-me">
         <div class="post-it">
           <div class="paragraph-about">
@@ -85,7 +104,7 @@
         
       </div>
 
-      <h3 id="projects-title" class="section-title"><mark>Mes projets</mark></h3>
+      <h3 id="my-projects" class="section-title"><mark>Mes projets</mark></h3>
       <div id="projects">
 
       </div>

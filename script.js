@@ -3,6 +3,7 @@
 
 const navbar = document.getElementById("nav");
 const navLinks = document.getElementsByClassName("nav-link");
+const bars = document.getElementsByClassName("bar");
 
 document.addEventListener("scroll", () => {
     if (window.scrollY > 85) { 
@@ -10,10 +11,66 @@ document.addEventListener("scroll", () => {
         for (let i = 0; i < navLinks.length; i++) {
             navLinks[i].style.color = "#ffffff";
         }
+        for (let i = 0; i < bars.length; i++) {
+            bars[i].style.backgroundColor = "#ffffff";
+        }
     } else {
         navbar.style.backgroundColor = "transparent"; 
         for (let i = 0; i < navLinks.length; i++) {
             navLinks[i].style.color = "#333333";
+        }
+        for (let i = 0; i < bars.length; i++) {
+            bars[i].style.backgroundColor = "black";
+        }
+    }
+});
+
+
+// Burger menu
+
+const burger = document.getElementById("burger-menu");
+burger.addEventListener("click", () => {
+    const menu = document.getElementById("collapse-menu");
+    menu.style.display = "block";
+    for (let i = 0; i < bars.length; i++) {
+        bars[i].style.backgroundColor = "var(--light)";
+    }
+    // Close menu when click outside
+    document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && !burger.contains(event.target)) {
+            menu.style.display = "none";
+            for (let i = 0; i < bars.length; i++) {
+                bars[i].style.backgroundColor = "var(--dark)";
+            }
+        }
+    });
+    // Close menu when click on link
+    const links = document.getElementsByClassName("nav-link");
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", () => {
+            menu.style.display = "none";
+            for (let i = 0; i < bars.length; i++) {
+                bars[i].style.backgroundColor = "var(--dark)";
+            }
+        });
+    }
+});
+
+const close = document.getElementById("close-menu");
+close.addEventListener("click", () => {
+    const menu = document.getElementById("collapse-menu");
+    menu.style.display = "none";
+    for (let i = 0; i < bars.length; i++) {
+        bars[i].style.backgroundColor = "var(--dark)";
+    }
+});
+
+close.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        const menu = document.getElementById("collapse-menu");
+        menu.style.display = "none";
+        for (let i = 0; i < bars.length; i++) {
+            bars[i].style.backgroundColor = "var(--dark)";
         }
     }
 });
@@ -29,8 +86,8 @@ window.addEventListener("resize", updateWidthScreen);
 function updateWidthScreen() {
     const widthScreen = window.innerWidth;
     document.getElementById("triangle").style.borderRight = widthScreen + "px solid transparent";
-    document.getElementById("full-height").style.height = "100%";
-    document.getElementById("full-height").style.width = "100%";
+    document.getElementById("full-height").style.height = "100vh";
+    document.getElementById("full-height").style.width = "100vw";
 }
 
 
