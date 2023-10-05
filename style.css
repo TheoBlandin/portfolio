@@ -191,9 +191,7 @@ mark {
 
 .about-me {
     margin: auto;
-    width: 100%;
-    margin-bottom: 70px;
-    margin-top: 50px;
+    margin: 30px 80px 20px 80px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -202,8 +200,9 @@ mark {
 
 .post-it {
     position: relative;
-    width: 50%;
     height: 100%;
+    flex-basis: 600px;
+    flex-grow: 1;
 }
 
 .paragraph-about {
@@ -265,17 +264,21 @@ mark {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 50px;
 }
+
 .venn {
-    width: 90%;
+    width: 400px;
 }
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 330px); /* 300px de largeur + 20px de marge */
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, 330px); /* 300px de largeur + 30px de marge */
+    gap: 35px 30px;
     margin-top: 50px;
     justify-content: center;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .project {
