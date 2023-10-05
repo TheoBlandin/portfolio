@@ -272,9 +272,10 @@ mark {
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 320px); /* 270px de largeur + 20px de marge */
-    gap: 20px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, 330px); /* 300px de largeur + 20px de marge */
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
 }
 
 .project {
@@ -285,16 +286,30 @@ mark {
     border-radius: 5px;
     margin: 10px;
     transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
 }
 
 .project:hover, .project:focus {
     transform: scale(1.04);
 }
 
+.vertical-scotch {
+    transform: rotate(90deg);
+    width: 80px !important;
+    top: 0;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -13px;
+}
+
 .icon-project {
     width: 100%;
     height: 180px;
     border-radius: 5px 5px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% 70%;
 }
 
 .description-project {
@@ -333,4 +348,10 @@ mark {
 .techno-box:hover .info-box,
 .techno-box:focus .info-box {
     display: block; 
+}
+
+.footer {
+    margin-top: 50px;
+    height: 100px;
+    background-color: var(--blue);
 }

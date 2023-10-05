@@ -90,10 +90,11 @@ fetch('assets/projects.json')
   .then((data) => {
     const projects = data.projects;
     for (let i = 0; i < projects.length; i++) {
-        const project = document.createElement("div");
+        const project = document.createElement("div"); // card project
         project.classList.add("project");
         project.tabIndex = 0;
         project.innerHTML = `
+            <div class="scotch vertical-scotch"></div>
             <div class="icon-project" id="icon-project-${i}"></div>
             <div class="description-project">
                 <div>
@@ -101,7 +102,7 @@ fetch('assets/projects.json')
                     <p>${projects[i].shortDescription}</p>
                 </div>
                 <div>
-                    <p>Technologies utilisées</p>
+                    <p>Technologies utilisées :</p>
                     <div id="techno-${i}" class="techno"></div>
                 </div>
             </div>
@@ -109,18 +110,27 @@ fetch('assets/projects.json')
         
         div.appendChild(project);
         document.getElementById(`icon-project-${i}`).style.backgroundColor = projects[i].backgroundColor;
-        for (let j = 0; j < projects[i].techno.length; j++) {
+        document.getElementById(`icon-project-${i}`).style.backgroundImage = `url(${projects[i].icon})`;
+        if (projects[i].title == "Manger de saison") {
+            document.getElementById(`icon-project-${i}`).style.backgroundPosition = "bottom";
+        }
+
+        technos = (projects[i].techno).sort(); // Sort technologies alphabetically
+        for (let j = 0; j < technos.length; j++) {
             const div = document.createElement("div");
             div.classList.add("techno-box");
             div.tabIndex = 0;
-            const techno = document.createElement("img");
-            techno.src = `assets/techno/${projects[i].techno[j].toLowerCase()}.svg`;
-            techno.alt = projects[i].techno[j];
+
+            const techno = document.createElement("img"); // icon
+            techno.src = `assets/techno/${technos[j].toLowerCase()}.svg`;
+            techno.alt = technos[j];
             div.appendChild(techno);
-            const infoBox = document.createElement("div");
+
+            const infoBox = document.createElement("div"); // infobox for accessibility
             infoBox.classList.add("info-box");
-            infoBox.innerHTML = projects[i].techno[j];
+            infoBox.innerHTML = technos[j];
             div.appendChild(infoBox);
+
             document.getElementById(`techno-${i}`).appendChild(div);
         }
     }

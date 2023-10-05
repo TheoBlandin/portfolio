@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "Weather Mood",
-            "icon": "assets/weather_mood.png",
+            "icon": "assets/projects/weather_mood.svg",
             "backgroundColor": "#EFF4FA",
             "shortDescription": "Application mobile de mood tracking",
             "techno": ["Flutter", "Inkscape", "Figma"]
@@ -23,7 +23,7 @@
         },
         {
             "title": "Manger de saison",
-            "icon": "assets/manger_de_saison.png",
+            "icon": "assets/projects/manger_de_saison.svg",
             "backgroundColor": "#E4F2E4",
             "shortDescription": "Application mobile de calendrier des fruits et légumes de saisons",
             "techno": ["Flutter", "Inkscape", "Figma"]
