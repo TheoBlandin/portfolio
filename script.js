@@ -76,22 +76,6 @@ close.addEventListener("keydown", (event) => {
 });
 
 
-// Update when resize
-
-// const widthScreen = window.innerWidth;
-// console.log(widthScreen)
-// document.getElementById("triangle").style.borderRight = widthScreen + "px solid transparent";
-// window.addEventListener("resize", updateWidthScreen);
-
-// function updateWidthScreen() {
-//     console.log("update")
-//     console.log(window.innerWidth - 20)
-//     document.getElementById("triangle").style.borderRight = (window.innerWidth - 20) + "px solid transparent";
-//     // document.getElementById("sky").style.height = "100vh";
-//     document.getElementById("sky").style.width = "100vw";
-// }
-
-
 // Clouds
 
 function addCloud() {
@@ -99,6 +83,7 @@ function addCloud() {
     const cloud = document.createElement("img");
     cloud.src = "assets/cloud.svg";
     cloud.classList.add("cloud");
+    cloud.alt = "";
     cloud.style.bottom = Math.floor(Math.random() * 100) + "%";
     cloud.style.width = (Math.floor(Math.random() * (450 - 150 + 1)) + 150).toString() + "px";
     cloud.style.opacity = 0.3 + Math.random() * 0.5;
