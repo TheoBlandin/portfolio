@@ -137,7 +137,7 @@ document.getElementById("btn-pause").addEventListener("click", () => {
     stopClouds();
 });
 
-// startClouds();
+startClouds();
 
 
 // Projects
