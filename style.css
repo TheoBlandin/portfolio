@@ -51,11 +51,11 @@ h4 {
     margin: 0;
 }
 
-#full-height {
+/* #full-height {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--blue);
-}
+} */
 
 nav {
     background-color: transparent;
@@ -217,10 +217,10 @@ nav li {
     min-height: 100vh;
     height: fit-content;
     width: 100%;
+    overflow: hidden;
 }
 
 .intro {
-    margin-top: 100px;
     display: flex;
     flex-wrap: wrap-reverse;
     gap: 20px;
@@ -230,8 +230,9 @@ nav li {
 
 .presentation-title {
     z-index: 90;
-    margin-top: 20px;
+    /* margin-top: 100px !important; */
     margin: auto;
+    height: fit-content;
 }
 
 .div-pic {
@@ -458,8 +459,70 @@ mark {
     display: block; 
 }
 
+/* TO-DO: on tap on mobile show name of techno */
+
 .footer {
     margin-top: 50px;
-    height: 100px;
     background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.div-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 7px;
+}
+
+.center {
+    text-align: center;
+}
+
+.div-footer p {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s;
+    left: 0;
+}
+
+.social-icon, .contact-icon {
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+}
+
+.social-link:hover, .social-link:focus {
+    transform: scale(1.1);
+}
+
+.contact {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s;
+}
+
+.contact:hover, .contact:focus {
+    transform: scale(1.1);
 }

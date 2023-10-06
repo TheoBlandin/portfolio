@@ -86,8 +86,8 @@ window.addEventListener("resize", updateWidthScreen);
 function updateWidthScreen() {
     const widthScreen = window.innerWidth;
     document.getElementById("triangle").style.borderRight = widthScreen + "px solid transparent";
-    document.getElementById("full-height").style.height = "100vh";
-    document.getElementById("full-height").style.width = "100vw";
+    // document.getElementById("sky").style.height = "100vh";
+    document.getElementById("sky").style.width = "100vw";
 }
 
 
@@ -136,7 +136,7 @@ document.getElementById("btn-pause").addEventListener("click", () => {
     stopClouds();
 });
 
-startClouds();
+// startClouds();
 
 
 // Projects
