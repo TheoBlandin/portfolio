@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio de Théo Blandin" />
+    <meta name="author" content="Théo Blandin" />
+    <meta
+      name="keywords"
+      content="Théo Blandin, portfolio, développeur web, développeur mobile, accessibilité numérique, accessibilité, web, mobile, design, UX, UI, design d'interface, design d'expérience utilisateur, design d'expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, ENSIM"
+    />
+    <link rel="icon" href="assets/cloud.ico" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <title>Théo Blandin - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="nav" role="navigation">
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="assets/icons/cloud.svg"
+            alt="Logo"
+            aria-label="Retour à la page d'acceuil"
+        /></a>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html#about-me" class="nav-link">À propos de moi</a>
+        </li>
+        <li>
+          <a href="index.html#my-projects" class="nav-link">Mes projets</a>
+        </li>
+      </ul>
+
+      <button aria-label="Ouvrir le menu" id="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+
+      <div id="collapse-menu">
+        <ul>
+          <li tabindex="0" id="close-menu">
+            <div class="cross-bar cross-1"></div>
+            <div class="cross-bar cross-2"></div>
+          </li>
+          <li>
+            <a href="index.html#about-me" class="nav-link collapse"
+              >À propos de moi</a
+            >
+          </li>
+          <li>
+            <a href="index.html#my-projects" class="nav-link collapse"
+              >Mes projets</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <h3 class="section-title">Internet Coffee Pot</h3>
+      <p class="description">
+        Internet Coffee Pot représente un duo de sites Internet. L'un a été
+        conçu pour respecter toutes les règles WCAG (i.e. Web Content
+        Accessibility Guidelines), tandis que l'autre a vocation à toutes les
+        transgresser. Ce projet est à but pédagogique et les deux sites sont
+        fictifs. Ce projet a été réalisé dans le cadre de mon stage réalisé à
+        IALabs, une entreprise spécialisée dans l'accessibilité numérique située
+        à Dublin, en Irlande.
+      </p>
+    </main>
+
+    <footer>
+      <div class="div-footer">
+        <a
+          class="social-link"
+          aria-label="Accéder à mon profil LinkedIn dans un nouvel onglet"
+          target="_blank"
+          href="https://www.linkedin.com/in/th%C3%A9o-blandin-b71a15258/"
+        >
+          <img
+            src="assets/icons/linkedin.svg"
+            alt="Logo LinkedIn"
+            class="social-icon"
+          />
+          LinkedIn
+        </a>
+
+        <a
+          class="social-link"
+          aria-label="Accéder à mon profil GitHub dans un nouvel onglet"
+          target="_blank"
+          href="https://github.com/TheoBlandin"
+        >
+          <img
+            src="assets/icons/github.svg"
+            alt="Logo GitHub"
+            class="social-icon"
+          />
+          GitHub
+        </a>
+      </div>
+
+      <div class="div-footer center">
+        ©2023 - Développé par Théo Blandin<br />
+        Mentions légales
+      </div>
+
+      <div class="div-footer">
+        <a
+          class="contact"
+          aria-label="M'envoyer un e-mail"
+          href="mailto:blandin.theo.44@gmail.com"
+        >
+          <img
+            src="assets/icons/mail.svg"
+            alt="Logo mail"
+            class="contact-icon"
+          />
+          blandin.theo.44@gmail.com
+        </a>
+        <a
+          class="contact"
+          aria-label="Télécharger mon CV"
+          href="assets/CV_Theo_Blandin.pdf"
+          download="CV_Theo_Blandin.pdf"
+        >
+          <img
+            src="assets/icons/download.svg"
+            alt="Logo téléchargement"
+            class="contact-icon"
+          />
+          Télécharger mon CV
+        </a>
+      </div>
+    </footer>
+  </body>
+
+  <script src="global.js" defer></script>
+</html>

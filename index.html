@@ -7,7 +7,8 @@
     <meta name="author" content="Théo Blandin" />
     <meta name="keywords" content="Théo Blandin, portfolio, développeur web, développeur mobile, accessibilité numérique, accessibilité, web, mobile, design, UX, UI, design d'interface, design d'expérience utilisateur, design d'expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, ENSIM" />
     <link rel="icon" href="assets/cloud.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Théo Blandin - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +18,12 @@
     />
   </head>
   <body>
-    <div id="sky">
+    <header id="sky">
       <nav id="nav" role="navigation">
           <div class="logo">
             <a href="index.html">
               <img
-                src="assets/cloud.svg"
+                src="assets/icons/cloud.svg"
                 alt="Logo"
                 aria-label="Retour à la page d'acceuil"
             /></a>
@@ -51,7 +52,7 @@
       </nav>
 
       <button tabindex="0" id="btn-pause" aria-label="Pauser l'animation">
-        <img src="assets/pause.svg" alt="Pause icon" id="pause-icon" />
+        <img src="assets/icons/pause.svg" alt="Pause icon" id="pause-icon" />
         <span id="msg-pause">Pauser l'animation</span>
       </button>
 
@@ -64,8 +65,10 @@
           <h2>Développeur web et mobile</h2>
         </div>
       </div>
-    </div>
-    <div class="body-page">
+    </header>
+
+
+    <main>
       <div id="triangle"></div>
 
       <h3 id="about-me" class="section-title"><mark>À propos de moi</mark></h3>
@@ -111,37 +114,39 @@
 
       </div>
 
-      <div class="footer">
-        <div class="div-footer">
-          <a class="social-link" aria-label="Accéder à mon profil LinkedIn dans un nouvel onglet" target="_blank" href="https://www.linkedin.com/in/th%C3%A9o-blandin-b71a15258/" >
-            <img src="assets/linkedin.svg" alt="Logo LinkedIn" class="social-icon" />
-            LinkedIn
-          </a>
-            
-          <a class="social-link" aria-label="Accéder à mon profil GitHub dans un nouvel onglet" target="_blank" href="https://github.com/TheoBlandin" >
-            <img src="assets/github.svg" alt="Logo GitHub" class="social-icon" />
-            GitHub
-          </a>
-        </div>
+    </main>
 
-        <div class="div-footer center">
-          ©2023 - Développé par Théo Blandin<br />
-          Mentions légales
-        </div>
-
-        <div class="div-footer">
-          <a class="contact" aria-label="M'envoyer un e-mail" href="mailto:blandin.theo.44@gmail.com">
-            <img src="assets/mail.svg" alt="Logo mail" class="contact-icon" />
-            blandin.theo.44@gmail.com
-          </a>
-          <a class="contact" aria-label="Télécharger mon CV" href="assets/CV_Theo_Blandin.pdf" download="CV_Theo_Blandin.pdf">
-            <img src="assets/download.svg" alt="Logo téléchargement" class="contact-icon" />
-            Télécharger mon CV
-          </a>
-        </div>
+    <footer>
+      <div class="div-footer">
+        <a class="social-link" aria-label="Accéder à mon profil LinkedIn dans un nouvel onglet" target="_blank" href="https://www.linkedin.com/in/th%C3%A9o-blandin-b71a15258/" >
+          <img src="assets/icons/linkedin.svg" alt="Logo LinkedIn" class="social-icon" />
+          LinkedIn
+        </a>
+          
+        <a class="social-link" aria-label="Accéder à mon profil GitHub dans un nouvel onglet" target="_blank" href="https://github.com/TheoBlandin" >
+          <img src="assets/icons/github.svg" alt="Logo GitHub" class="social-icon" />
+          GitHub
+        </a>
       </div>
-    </div>
+
+      <div class="div-footer center">
+        ©2023 - Développé par Théo Blandin<br />
+        Mentions légales
+      </div>
+
+      <div class="div-footer">
+        <a class="contact" aria-label="M'envoyer un e-mail" href="mailto:blandin.theo.44@gmail.com">
+          <img src="assets/icons/mail.svg" alt="Logo mail" class="contact-icon" />
+          blandin.theo.44@gmail.com
+        </a>
+        <a class="contact" aria-label="Télécharger mon CV" href="assets/CV_Theo_Blandin.pdf" download="CV_Theo_Blandin.pdf">
+          <img src="assets/icons/download.svg" alt="Logo téléchargement" class="contact-icon" />
+          Télécharger mon CV
+        </a>
+      </div>
+    </footer>
   </body>
 
   <script src="script.js" defer></script>
+  <script src="global.js" defer></script>
 </html>

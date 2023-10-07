@@ -1,0 +1,22 @@
+nav {
+    background-color: #333333 !important;
+    top: 0;
+}
+
+.nav-link {
+    color: var(--light) !important;
+}
+
+.bar {
+    background-color: var(--light) !important;
+}
+
+main {
+    height: 1000px;
+    margin-top: 40px;
+    padding: 4rem;
+}
+
+.description {
+    padding: 20px 1rem 20px 1rem;
+}
