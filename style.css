@@ -3,7 +3,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     background-color: white;
 }
 
@@ -16,6 +15,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }   
 
 :root {
@@ -67,14 +67,6 @@ nav {
     justify-content: space-between;
     padding: 0.625rem 3.125rem;
 }
-
-/* .content-navbar {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
 
 nav img {
     height: 64px;
@@ -186,12 +178,44 @@ nav li {
     #burger-menu {
         display: block; 
     }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .div-pic {
+        max-width: 90% !important;
+    }
+
+    .intro {
+        /* top: 80px !important; */
+        gap: 0px !important
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+    .intro {
+        /* top: 260px !important; */
+        gap: 20px !important;
+    }
+
+    .presentation-title {
+        margin-top: 70px !important;
+    }
+
+    .div-pic {
+        max-width: 50% !important;
+    }
 }
 
 #btn-pause {
     top: 70px;
     left: 20px;
-    z-index: 90;
+    z-index: 99;
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -200,7 +224,6 @@ nav li {
     outline: none;
     user-select: none;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     font-size: 1em;
 }
 
@@ -217,31 +240,37 @@ nav li {
 #sky {
     background-color: var(--blue);
     min-height: 100vh;
-    height: fit-content;
-    width: 100%;
-    overflow: hidden;
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    top: 0;
 }
 
 .intro {
     display: flex;
     flex-wrap: wrap-reverse;
-    gap: 20px;
+    gap: 80px;
+    padding: 0px 5% 0px 5%;
+    width: 100%;
     height: 100%;
-    margin: auto 5% auto 5%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .presentation-title {
     z-index: 90;
     /* margin-top: 100px !important; */
     margin: auto;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 .div-pic {
     position: relative;
     flex-basis: 400px;
     flex-grow: 1;
-    max-width: 600px;
+    max-width: 45%;
     z-index: 90;
     margin: auto;
 }

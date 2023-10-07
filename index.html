@@ -17,40 +17,39 @@
     />
   </head>
   <body>
+    <nav id="nav" role="navigation">
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="assets/cloud.svg"
+            alt="Logo"
+            aria-label="Retour à la page d'acceuil"
+        /></a>
+      </div>
+      <ul>
+        <li><a href="#about-me" class="nav-link">À propos de moi</a></li>
+        <li><a href="#my-projects" class="nav-link">Mes projets</a></li>
+      </ul>
+
+      <button aria-label="Ouvrir le menu" id="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+
+      <div id="collapse-menu">
+        <ul>
+          <li tabindex="0" id="close-menu">
+            <div class="cross-bar cross-1"></div>
+            <div class="cross-bar cross-2"></div>
+          </li>
+          <li><a href="#about-me" class="nav-link collapse">À propos de moi</a></li>
+          <li><a href="#my-projects" class="nav-link collapse">Mes projets</a></li>
+        </ul>
+      </div>
+  </nav>
     <div id="sky">
-      <nav id="nav" role="navigation">
-        <!-- <div class="content-navbar"> -->
-          <div class="logo">
-            <a href="index.html">
-              <img
-                src="assets/cloud.svg"
-                alt="Logo"
-                aria-label="Retour à la page d'acceuil"
-            /></a>
-          </div>
-          <ul>
-            <li><a href="#about-me" class="nav-link">À propos de moi</a></li>
-            <li><a href="#my-projects" class="nav-link">Mes projets</a></li>
-          </ul>
-
-          <button id="burger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </button>
-
-          <div id="collapse-menu">
-            <ul>
-              <li tabindex="0" id="close-menu">
-                <div class="cross-bar cross-1"></div>
-                <div class="cross-bar cross-2"></div>
-              </li>
-              <li><a href="#about-me" class="nav-link collapse">À propos de moi</a></li>
-              <li><a href="#my-projects" class="nav-link collapse">Mes projets</a></li>
-            </ul>
-          </div>
-        <!-- </div> -->
-      </nav>
+      
 
       <button tabindex="0" id="btn-pause" aria-label="Pauser l'animation">
         <img src="assets/pause.svg" alt="Pause icon" id="pause-icon" />

@@ -95,7 +95,8 @@ function addCloud() {
 }
 
 function startClouds() {
-    addCloud();
+    // addCloud();
+    console.log("start");
     document.getElementById("pause-icon").src="assets/pause.svg";
     document.getElementById("msg-pause").innerHTML = "Pauser l'animation"
     document.getElementById("btn-pause").removeEventListener("click", startClouds);
