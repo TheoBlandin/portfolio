@@ -258,7 +258,7 @@
     color: var(--light);
 }
 
-.project:hover, .project:focus {
+.project:hover {
     transform: scale(1.04);
 }
 
