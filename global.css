@@ -27,6 +27,7 @@ body {
     --yellow: #FAEDCB;
     --dark: #394648;
     --light: #ECECEC;
+    --darkBlue: #286CA4;
 }
 
 ::-webkit-scrollbar {
@@ -56,21 +57,37 @@ h3 {
 }
 
 h4 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 400;
     margin: 0;
 }
 
-.section-title {
-    margin-left: 3rem;
-    white-space: normal;
+p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
 }
 
-mark {
-    display: inline-block;
+.section-title {
+    margin-left: 3rem;
+}
+
+strong {
+    position: relative;
+    font-weight: 400;
+}
+
+strong::before {
     background-color: var(--yellow);
-    line-height: 0em;
-    padding-bottom: 0.5em;
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 50%;
+    left: -10px;
+    bottom: 0;
+    z-index: -1;
 }
 
 
@@ -236,7 +253,7 @@ footer {
     left: 0;
 }
 
-.social-icon, .contact-icon {
+.icon {
     height: 25px;
     width: 25px;
     margin: 10px;
@@ -246,7 +263,7 @@ footer {
     transform: scale(1.1);
 }
 
-.contact {
+.link {
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -258,6 +275,6 @@ footer {
     transition: transform 0.2s;
 }
 
-.contact:hover, .contact:focus {
-    transform: scale(1.1);
+.link:hover {
+    transform: scale(1.05);
 }

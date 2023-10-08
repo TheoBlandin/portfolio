@@ -3,7 +3,7 @@
 
 const navbar = document.getElementById("nav");
 const navLinks = document.getElementsByClassName("nav-link");
-const bars = document.getElementsByClassName("bar");
+const menu = document.getElementsByClassName("bar");
 
 document.addEventListener("scroll", () => {
     if (window.scrollY > 85) { 
@@ -11,16 +11,16 @@ document.addEventListener("scroll", () => {
         for (let i = 0; i < navLinks.length; i++) {
             navLinks[i].style.color = "#ffffff";
         }
-        for (let i = 0; i < bars.length; i++) {
-            bars[i].style.backgroundColor = "#ffffff";
+        for (let i = 0; i < menu.length; i++) {
+            menu[i].style.backgroundColor = "#ffffff";
         }
     } else {
         navbar.style.backgroundColor = "transparent"; 
         for (let i = 0; i < navLinks.length; i++) {
             navLinks[i].style.color = "#333333";
         }
-        for (let i = 0; i < bars.length; i++) {
-            bars[i].style.backgroundColor = "black";
+        for (let i = 0; i < menu.length; i++) {
+            menu[i].style.backgroundColor = "black";
         }
     }
 });
@@ -119,6 +119,7 @@ fetch('assets/projects.json')
             const techno = document.createElement("img"); // icon
             techno.src = `assets/techno/${technos[j].toLowerCase()}.svg`;
             techno.alt = technos[j];
+            techno.loading = "lazy";
             div.appendChild(techno);
 
             const infoBox = document.createElement("div"); // infobox for accessibility

@@ -12,11 +12,51 @@ nav {
 }
 
 main {
-    height: 1000px;
-    margin-top: 40px;
-    padding: 4rem;
+    margin-top: 100px;
+    padding: 2%;
+}
+
+.subtitle {
+    color: var(--darkBlue);
+    margin-left: 4rem;
+    margin-bottom: 1rem;
 }
 
 .description {
-    padding: 20px 1rem 20px 1rem;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.overview {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.screens-div {
+    flex: 2;
+    max-width: 100%;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screens {
+    width: 100%;
+}
+
+.infos-div {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.overview a {
+    color: black;
+    text-decoration: none;
 }
