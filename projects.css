@@ -42,6 +42,12 @@ main {
     margin-bottom: 1rem;
 }
 
+.item {
+    color: var(--darkBlue);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 .description {
     width: 50%;
     margin: auto;
