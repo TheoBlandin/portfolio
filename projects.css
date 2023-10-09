@@ -78,7 +78,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     gap: 30px;
     width: 80%;
 }
@@ -127,4 +127,24 @@ figcaption {
     text-align: center;
     font-size: 0.9rem;
     color: black
+}
+
+.skills {
+    margin: auto;
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.skill {
+    padding: 3px 12px;
+    border-radius: 25px;
+    background-color: var(--dark);
+    color: var(--light);
+    white-space:nowrap;
 }

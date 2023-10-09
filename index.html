@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio de Théo Blandin" />
-    <meta name="author" content="Théo Blandin" />
-    <meta name="keywords" content="Théo Blandin, portfolio, développeur web, développeur mobile, accessibilité numérique, accessibilité, web, mobile, design, UX, UI, design d'interface, design d'expérience utilisateur, design d'expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, ENSIM" />
-    <link rel="icon" href="assets/cloud.ico" />
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="index.css" />
+    <meta name="description" content="Portfolio de Théo Blandin">
+    <meta name="author" content="Théo Blandin">
+    <meta
+      name="keywords"
+      content="Théo Blandin, portfolio, développeur web, développeur mobile, accessibilité numérique, accessibilité, web, mobile, design, UX, UI, design d'interface, design d'expérience utilisateur, design d'expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, expérience utilisateur, ENSIM"
+    >
+    <link rel="icon" href="assets/cloud.ico">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
     <title>Théo Blandin - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
-    />
+    >
   </head>
   <body>
     <header id="sky">
-      <nav id="nav" role="navigation">
+      <nav id="nav">
           <div class="logo">
             <a href="index.html">
               <img
                 src="assets/icons/cloud.svg"
                 alt="Logo"
                 aria-label="Retour à la page d'acceuil"
-            /></a>
+            ></a>
           </div>
           <ul>
             <li><a href="#sky" class="nav-link">Acceuil</a></li>
@@ -35,18 +38,20 @@
           </ul>
 
           <button aria-label="Ouvrir le menu" id="burger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </button>
 
           <div id="collapse-menu">
             <ul>
-              <li tabindex="0" id="close-menu">
-                <div class="cross-bar cross-1"></div>
-                <div class="cross-bar cross-2"></div>
+              <li>
+                <button aria-label="Fermer le menu" id="close-menu">
+                  <span class="cross-bar cross-1"></span>
+                  <span class="cross-bar cross-2"></span>
+                </button>
               </li>
-              <li><a href="#sky" class="nav-link">Acceuil</a></li>
+              <li><a href="#sky" class="nav-link collapse">Acceuil</a></li>
               <li><a href="#about-me" class="nav-link collapse">À propos de moi</a></li>
               <li><a href="#my-projects" class="nav-link collapse">Mes projets</a></li>
             </ul>
@@ -54,13 +59,13 @@
       </nav>
 
       <button tabindex="0" id="btn-pause" aria-label="Pauser l'animation">
-        <img src="assets/icons/pause.svg" alt="Pause icon" id="pause-icon" />
+        <img src="assets/icons/pause.svg" alt="Pause icon" id="pause-icon">
         <span id="msg-pause">Pauser l'animation</span>
       </button>
 
       <div class="intro">
         <div class="div-pic">
-          <img src="assets/pic.svg" alt="Portrait dessiné numériquement" class="pic" />
+          <img src="assets/pic.svg" alt="Portrait dessiné numériquement" class="pic">
         </div>
         <div class="presentation-title">
           <h1>Théo Blandin</h1>
@@ -84,7 +89,7 @@
             utilisateur soit sourd, dyslexique, autiste, allophone, ou peu
             familiarisé avec la technologie, mon objectif principal est de rendre
             mon travail le plus accessible possible. Je souhaite jouer un rôle
-            actif dans la promotion de l'accessibilité numérique au quotidien.<br /><br />
+            actif dans la promotion de l'accessibilité numérique au quotidien.<br><br>
             Mais qui dit accessibilité ne dit pas dénué de style ou ennuyeux.
             J'accorde également une grande importance à l'aspect visuel et aux
             fonctionnalités de mes projets pour m'assurer que non seulement
@@ -102,10 +107,10 @@
           </div>
       </div>
       <div class="venn-diagram">
-        <img src="assets/venn.svg" alt="Diagramme de Venn, voir paragraphe explicatif" class="venn" />
-        <p>La créativité et la minutie entrainent l'innovation.<br />
-          La créativité et l'empathie servent le design.<br />
-          L'empathie et la minutie permettent l'accessibilité.<br />
+        <img src="assets/venn.svg" alt="Diagramme de Venn, voir paragraphe explicatif" class="venn">
+        <p>La créativité et la minutie entrainent l'innovation.<br>
+          La créativité et l'empathie servent le design.<br>
+          L'empathie et la minutie permettent l'accessibilité.<br>
           L'ensemble représente mon travail. </p>
       </div>
         
@@ -131,7 +136,7 @@
             alt="Logo LinkedIn"
             class="icon"
             loading="lazy"
-          />
+          >
           LinkedIn
         </a>
 
@@ -146,13 +151,13 @@
             alt="Logo GitHub"
             class="icon"
             loading="lazy"
-          />
+          >
           GitHub
         </a>
       </div>
 
       <div class="div-footer">
-        ©2023 - Développé par Théo Blandin<br />
+        ©2023 - Développé par Théo Blandin<br>
         Mentions légales
       </div>
 
@@ -167,7 +172,7 @@
             alt="Logo mail"
             class="icon"
             loading="lazy"
-          />
+          >
           blandin.theo.44@gmail.com
         </a>
         <a
@@ -181,7 +186,7 @@
             alt="Logo téléchargement"
             class="icon"
             loading="lazy"
-          />
+          >
           Télécharger mon CV
         </a>
       </div>
