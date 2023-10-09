@@ -236,9 +236,17 @@
 #projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, 330px); /* 300px de largeur + 30px de marge */
-    gap: 35px 30px;
+    gap: 55px 40px;
     margin-top: 50px;
     justify-content: center;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--light);
+    width: 300px;
+    height: 450px;
+    margin: auto;
 }
 
 .project {
@@ -247,15 +255,9 @@
     background-color: var(--dark);
     color: var(--light);
     border-radius: 5px;
-    margin: 10px;
     transition: transform 0.2s;
     cursor: pointer;
     position: relative;
-}
-
-.project a {
-    text-decoration: none;
-    color: var(--light);
 }
 
 .project:hover {
@@ -282,7 +284,7 @@
 
 .description-project {
     padding: 10px;
-    height: 250px;
+    height: 270px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -296,7 +298,7 @@
 .techno img {
     height: 30px;
     width: 30px;
-    margin: 3px 5px 3px 5px;
+    margin: 5px;
 }
 
 .info-box {

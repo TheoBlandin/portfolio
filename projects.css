@@ -31,10 +31,6 @@ main {
         transform: translateX(0) !important;
     }
 
-    .long-description {
-        width: 100%;
-    }
-
     .wrapper {
         grid-template-columns: repeat(1, 1fr) !important;
     }
@@ -89,7 +85,7 @@ main {
 }
 
 .long-description {
-    padding: 5%;
+    padding: 3%;
 }
 
 .wrapper {
@@ -97,7 +93,7 @@ main {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    grid-gap: 20px;
     width: 90%;
 }
 
@@ -151,7 +147,6 @@ figcaption {
     background: var(--yellow);
     position: relative;
     top: -1em;
-    /* transform: translateY(-1em); */
  }
 
  .note:after {

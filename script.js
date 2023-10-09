@@ -83,12 +83,13 @@ fetch('assets/projects.json')
   .then((data) => {
     const projects = data.projects;
     for (let i = 0; i < projects.length; i++) {
-        const project = document.createElement("div"); // card project
-        project.classList.add("project");
-        project.tabIndex = 0;
-        project.innerHTML = `
-            <div class="scotch vertical-scotch"></div>
-            <a href="${projects[i].link}" aria-label="Ouvrir la page du projet">
+        const linkTo = document.createElement("a"); 
+        linkTo.ariaLabel = "Ouvrir la page du projet";
+        linkTo.classList.add("project-link");
+        linkTo.href = projects[i].link;
+        linkTo.innerHTML = `
+            <div class="project">
+                <div class="scotch vertical-scotch"></div>
                 <div class="icon-project" id="icon-project-${i}"></div>
                 <div class="description-project">
                     <div>
@@ -100,10 +101,10 @@ fetch('assets/projects.json')
                         <div id="techno-${i}" class="techno"></div>
                     </div>
                 </div>
-            </a>
+            <div>
         `
         
-        div.appendChild(project);
+        div.appendChild(linkTo);
         document.getElementById(`icon-project-${i}`).style.backgroundColor = projects[i].backgroundColor;
         document.getElementById(`icon-project-${i}`).style.backgroundImage = `url(${projects[i].icon})`;
         if (projects[i].title == "Manger de saison") {
