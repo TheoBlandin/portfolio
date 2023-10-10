@@ -34,6 +34,7 @@ function addCloud() {
     cloud.src = "assets/icons/cloud.svg";
     cloud.classList.add("cloud");
     cloud.alt = "";
+    cloud.ariaHidden = true;
     cloud.style.bottom = Math.floor(Math.random() * 100) + "%";
     cloud.style.width = (Math.floor(Math.random() * (450 - 150 + 1)) + 150).toString() + "px";
     cloud.style.opacity = 0.3 + Math.random() * 0.5;

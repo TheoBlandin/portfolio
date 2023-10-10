@@ -27,18 +27,21 @@ main {
     }
 
     .description {
-        width: 100%;
-        transform: translateX(0) !important;
+        width: 80% !important;
     }
 
     .wrapper {
         grid-template-columns: repeat(1, 1fr) !important;
     }
+
+    .infos-div {
+        width: 90% !important;
+    }
 }
 
 .subtitle {
     color: var(--darkBlue);
-    margin-left: 4rem;
+    margin-left: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -51,7 +54,7 @@ main {
 .description {
     width: 50%;
     margin: auto;
-    transform: translateX(-20%);
+    /* transform: translateX(-20%); */
     margin-top: 20px;
     font-size: 1.2rem;
 }
@@ -82,7 +85,7 @@ main {
     justify-content: space-between;
     align-items: top;
     gap: 30px;
-    width: 80%;
+    width: 70%;
 }
 
 .infos-div div {
