@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="projects.css" />
     <script src="global.js" defer></script>
-    <title>Théo Blandin - Internet Coffee Pot</title>
+    <title>Théo Blandin - NerdLister</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -58,12 +58,18 @@
                 <span class="cross-bar cross-2"></span>
               </button>
             </li>
-            <li><a href="index.html#sky" class="nav-link collapse">Accueil</a></li>
             <li>
-              <a href="index.html#about-me" class="nav-link collapse">À propos de moi</a>
+              <a href="index.html#sky" class="nav-link collapse">Accueil</a>
             </li>
             <li>
-              <a href="index.html#my-projects" class="nav-link collapse">Mes projets</a>
+              <a href="index.html#about-me" class="nav-link collapse"
+                >À propos de moi</a
+              >
+            </li>
+            <li>
+              <a href="index.html#my-projects" class="nav-link collapse"
+                >Mes projets</a
+              >
             </li>
           </ul>
         </div>
@@ -72,11 +78,11 @@
 
     <main>
       <div class="headline">
-        <h3 class=""><span class="highlight">Internet Coffee Pot</span></h3>
+        <h3 class=""><span class="highlight">NerdLister</span></h3>
         <h4 class="subtitle">2023</h4>
         <p class="description">
-          Duo de sites web promulguant l’importance de l’accessibilité
-          numérique, réalisé dans le cadre d'un stage à IALabs.
+          Site web servant à classer n'importe quelle liste d'éléments à l'aide de l'algorithme de
+          tri fusion.
         </p>
       </div>
 
@@ -84,30 +90,23 @@
         <div class="screens-div">
           <img
             class="screens"
-            src="assets/screens/icp.webp"
-            alt="Capture d'écrans du site Internet Coffee Pot accessible"
+            src="assets/screens/nerdlister.webp"
+            alt="Captures d'écrans de NerdLister"
           />
         </div>
         <div class="infos-div">
           <div>
             <h4 class="item">Mon rôle</h4>
-            <p>
-              Projet réalisé en équipe de deux développeurs et d'un testeur,
-              supervisé par un chef de projet. J'ai occupé le poste de
-              développeur web.
-            </p>
+            <p>Projet personnel réalisé en totalité par moi-même.</p>
           </div>
 
           <div>
             <h4 class="item">Compétences mobilisées</h4>
             <div class="skills">
-              <span class="skill">HTML</span>
               <span class="skill">CSS</span>
-              <span class="skill">JavaScript</span>
-              <span class="skill">Accessibilité numérique</span>
-              <span class="skill">Travail en équipe</span>
-              <span class="skill">Anglais</span>
-              <span class="skill">Méthodes Agiles</span>
+              <span class="skill">React</span>
+              <span class="skill">Algorithmie</span>
+              <span class="skill">UI/UX</span>
             </div>
           </div>
 
@@ -116,9 +115,9 @@
             <p>
               <a
                 class="link"
-                aria-label="Accéder au site Internet Coffee Pot accessible dans un nouvel onglet"
+                aria-label="Accéder au site internet"
                 target="_blank"
-                href="https://better.internetcoffeepot.com/"
+                href="https://nerdlister.netlify.app/"
               >
                 <img
                   src="assets/icons/link.svg"
@@ -126,13 +125,13 @@
                   loading="lazy"
                   class="icon"
                 />
-                Version accessible
+                Site Internet
               </a>
               <a
                 class="link"
-                aria-label="Accéder au site Internet Coffee Pot inaccessible dans un nouvel onglet"
+                aria-label="Accéder au dépôt Github"
                 target="_blank"
-                href="https://internetcoffeepot.com/"
+                href="https://github.com/TheoBlandin/NerdLister"
               >
                 <img
                   src="assets/icons/link.svg"
@@ -140,7 +139,7 @@
                   loading="lazy"
                   class="icon"
                 />
-                Version non accessible
+                Projet GitHub
               </a>
             </p>
           </div>
@@ -149,52 +148,58 @@
         <div>
           <div class="wrapper">
             <p class="long-description">
-              Ce duo de sites a été réalisé sur une période d'un mois et demi
-              dans le cadre d'un stage effectué à IALabs, une entreprise
-              spécialisée dans l'accessibilité numérique située à Dublin, en
-              Irlande. De prime abord, les deux sites sont le site d'une chaîne
-              de café appelée <i>The Internet Coffee Pot</i>, où l'on peut
-              passer commande et se renseigner sur le café. Mais en réalité,
-              même si les deux sites sont quasiment identiques au niveau de leur
-              fonctionnalité, ils différent de manière conséquente au niveau de
-              leur accessibilité. Ce projet est à but pédagogique et les sites
-              sont donc fictifs (il en va de même pour la chaîne de café), dans
-              l'optique d'éveiller le grand public aux questions d'accessibilité
-              numérique. L'un des sites a alors vocation à respecter chacune des
-              règles d'accessibilité, tandis que l'autre cherche à toutes les
-              transgresser. Lorsque nous parlons de règles d'accessiblité, nous
-              parlons des normes établies par les WCAG (i.e. Web Content
-              Accessibility Guidelines).
+              Ce site fut réalisé dans l'optique d'apprendre à utiliser le
+              framework React. Partant d'un besoin personnel de classer de
+              manière simple et efficace mes séries préférées, j'ai eu l'idée de
+              créer un site web permettant de m'aider, et d'ainsi aider d'autres
+              personnes qui voudraient eux aussi classer des éléments. C'est
+              l'utilisateur lui-même qui va créer sa liste d'éléments et à
+              l'aide d'un tri fusion revisité il va pouvoir obtenir un
+              classement authentique en quelques clics. Pour rappel, le tri
+              fusion est un algorithme de tri permettant de trier une liste
+              d'éléments. Le but est de diviser la liste en deux, puis de
+              diviser ces deux parties encore en deux, etc, jusqu'à obtenir des
+              éléments uniques. On remonte ensuite le processus en classant les
+              éléments un à un. Ici, c'est l'utilisateur et non la machine qui
+              va déterminer lequel des deux éléments a le poids le plus fort.
+              Celui-ci est alors confronté à une succession de duel, rendant son
+              choix beaucoup plus facile malgré des choix cornéliens qui peuvent
+              se présenter à lui. À la fin du processus de tri, son classement
+              lui est présenté sous forme d'un podium.
             </p>
 
             <div class="polaroid">
               <img
-                src="assets/screens/icp-1.webp"
-                alt="Capture d'écran de l'écran d'accueil du site accessible"
+                src="assets/screens/nerdlister-1.webp"
+                alt="Capture d'écran de l'écran permettant la création de la liste d'éléments à classer"
               />
-              <span aria-hidden="true">Site accessible</span>
+              <span aria-hidden="true">Création de la liste à classer</span>
             </div>
 
             <div class="polaroid">
               <img
-                src="assets/screens/icp-2.webp"
-                alt="Capture d'écran de l'écran d'accueil du site non accessible"
+                src="assets/screens/nerdlister-2.webp"
+                alt="Capture d'écran du classement final"
               />
-              <span aria-hidden="true">Site non accessible</span>
+              <span aria-hidden="true">Classement final</span>
             </div>
 
             <p class="long-description">
-              Ce projet fut pour moi une plongée complète dans le monde de
-              l'accessiblité numérique, me permettant de me familiariser avec
-              presque chacune des règles énoncées dans le WCAG. C'était
-              également ma première expérience professionnelle, ce qui m'a
-              permit d'en apprendre beaucoup sur le développement web, la manière de
-              travailler en équipe et la gestion d'un projet. L'accessibilité
-              numérique étant un de mes sujets d'intérêt les plus importants,
-              j'ai été ravi de pouvoir travailler sur ce projet. J'ai pu y
-              découvrir les multiples manières pour rendre un site accessible,
-              en allant de l'ajout de texte alternatif aux images à la mise en
-              place d'une navigation entièrement par clavier. 
+              En plus de proposer un site web permettant de classer n'importe
+              quel type d'éléments, j'ai souhaité à travers ce projet apprendre
+              les bases de React, outil que je n'avais jamais pu explorer
+              auparavant. Restant encore un novice en la matière, ce projet m'a
+              néanmoins permit de pratiquer de manière concrète une nouvelle
+              technologie et d'ainsi y développer des bases solides. J'ai
+              également pu y approfondir de nouveaux types de design et
+              d'expérience utilisateur, notamment en ce qui concerne les
+              animations et les transitions en CSS. Mon objectif encore une fois
+              fut de rendre ce site un maximum accessible. Le site est ainsi
+              entièrement navigable par clavier et chaque contraste de couleur
+              a été minutieusement vérifié. Celui-ci est néanmoins loin d'être
+              parfait, tant au niveau de l'accessibilité que des fonctionnalités
+              que je pourrais y rajouter, et c'est un projet que je garde de
+              côté pour y revenir plus tard.
             </p>
           </div>
         </div>
