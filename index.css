@@ -44,6 +44,12 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+    #triangle {
+        border-right: 1440px solid transparent !important;
+    }
+}
+
 
 /* Pause button */
 
@@ -248,7 +254,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 330px); /* 300px de largeur + 30px de marge */
     gap: 55px 40px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
     justify-content: center;
 }
 

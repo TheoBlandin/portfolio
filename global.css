@@ -3,7 +3,8 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: white;
+    /* background-color: white; */
+    background-color: var(--light);
 }
 
 html {
@@ -13,6 +14,17 @@ html {
 
 body {
     line-height: 1.5;
+}
+
+main {
+    background-color: white;
+    max-width: 1440px;
+    margin: auto;
+}
+
+header {
+    max-width: 1440px;
+    margin: auto;
 }
 
 *, ::before, ::after {
@@ -96,6 +108,7 @@ strong::before {
 nav {
     position: fixed;
     width: 100%;
+    max-width: 1440px;
     transition: background-color 0.7s ease;
     z-index: 100;
     display: flex;
@@ -232,7 +245,8 @@ nav li {
 /* Footer */
 
 footer {
-    margin-top: 50px;
+    max-width: 1440px;
+    margin: auto;
     background-color: var(--blue);
     width: 100%;
     display: flex;
