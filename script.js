@@ -85,7 +85,7 @@ fetch('assets/projects.json')
     const projects = data.projects;
     for (let i = 0; i < projects.length; i++) {
         const linkTo = document.createElement("a"); 
-        linkTo.ariaLabel = "Ouvrir la page du projet";
+        // linkTo.ariaLabel = "Ouvrir la page du projet " + projects[i].title;
         linkTo.classList.add("project-link");
         linkTo.href = projects[i].link;
         linkTo.innerHTML = `
@@ -94,7 +94,7 @@ fetch('assets/projects.json')
                 <div class="icon-project" id="icon-project-${i}"></div>
                 <div class="description-project">
                     <div>
-                        <h4>${projects[i].title}</h4>
+                        <h4 id=title-project-${i}>${projects[i].title}</h4>
                         <p>${projects[i].shortDescription}</p>
                     </div>
                     <div>
@@ -105,9 +105,16 @@ fetch('assets/projects.json')
             <div>
         `
         
+        
         div.appendChild(linkTo);
         document.getElementById(`icon-project-${i}`).style.backgroundColor = projects[i].backgroundColor;
         document.getElementById(`icon-project-${i}`).style.backgroundImage = `url(${projects[i].icon})`;
+
+        if (projects[i].lang == "en") {
+            document.getElementById(`title-project-${i}`).lang = "en";
+        }
+
+
         if (projects[i].title == "Manger de saison") {
             document.getElementById(`icon-project-${i}`).style.backgroundPosition = "bottom";
         }
@@ -124,8 +131,9 @@ fetch('assets/projects.json')
             techno.loading = "lazy";
             div.appendChild(techno);
 
-            const infoBox = document.createElement("div"); // infobox for accessibility
+            const infoBox = document.createElement("div"); // infobox on hover/focus
             infoBox.classList.add("info-box");
+            infoBox.ariaHidden = true;
             infoBox.innerHTML = technos[j];
             div.appendChild(infoBox);
 
