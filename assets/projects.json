@@ -20,7 +20,7 @@
         },
         {
             "title": "Internet Coffee Pot",
-            "icon": "assets/icp.png",
+            "icon": "assets/projects/icp.svg",
             "backgroundColor": "#161618",
             "shortDescription": "Duo de sites web promulguant l’importance de l’accessibilité numérique",
             "techno": ["HTML", "CSS", "JavaScript"],
