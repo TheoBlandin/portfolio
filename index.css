@@ -46,7 +46,7 @@
 
 @media screen and (min-width: 1440px) {
     #triangle {
-        border-right: 1440px solid transparent !important;
+        border-right: 2000px solid transparent !important;
     }
 }
 
