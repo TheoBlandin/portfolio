@@ -10,21 +10,21 @@
             "lang": "en"
         },
         {
-            "title": "NerdLister",
-            "icon": "assets/nerdlister.png",
-            "backgroundColor": "#2F2C46",
-            "shortDescription": "Site web servant à faire des classements",
-            "techno": ["Figma", "React", "CSS"],
-            "link": "nerdlister.html",
-            "lang": "en"
-        },
-        {
             "title": "Internet Coffee Pot",
             "icon": "assets/projects/icp.svg",
             "backgroundColor": "#161618",
             "shortDescription": "Duo de sites web promulguant l’importance de l’accessibilité numérique",
             "techno": ["HTML", "CSS", "JavaScript"],
             "link": "icp.html",
+            "lang": "en"
+        },
+        {
+            "title": "NerdLister",
+            "icon": "assets/nerdlister.png",
+            "backgroundColor": "#2F2C46",
+            "shortDescription": "Site web servant à faire des classements",
+            "techno": ["Figma", "React", "CSS"],
+            "link": "nerdlister.html",
             "lang": "en"
         },
         {
