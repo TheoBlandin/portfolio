@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="projects.css" />
     <script src="global.js" defer></script>
+    <script src="projects.js" defer></script>
     <title>Théo Blandin - NerdLister</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,10 +25,7 @@
   <body>
     <header>
       <nav id="nav">
-        <a
-          class="skip-to-content-link"
-          href="#about-me"
-        >
+        <a class="skip-to-content-link" href="#about-me">
           Passer au contenu principal
         </a>
         <div class="logo">
@@ -184,10 +182,13 @@
 
             <div class="polaroid">
               <img
-                src="assets/screens/nerdlister-1.webp"
-                alt="Capture d'écran de l'écran permettant la création de la liste d'éléments à classer"
+                class="gif"
+                id="gif-merge-sort"
+                tabindex="0"
+                src="assets/screens/merge-sort.gif"
+                alt="Animation expliquant l'algorithme du tri fusion, cliquer pour stopper/lancer l'animation"
               />
-              <span aria-hidden="true">Création de la liste à classer</span>
+              <span aria-hidden="true">Algorithme du tri fusion</span>
             </div>
 
             <div class="polaroid">
