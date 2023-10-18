@@ -4,7 +4,7 @@
             "title": "Weather Mood",
             "icon": "assets/projects/weather_mood.svg",
             "backgroundColor": "#EFF4FA",
-            "shortDescription": "Application mobile de mood tracking",
+            "shortDescription": "Application mobile de suivi des humeurs",
             "techno": ["Flutter", "Inkscape", "Figma"],
             "link": "weather_mood.html",
             "lang": "en"
