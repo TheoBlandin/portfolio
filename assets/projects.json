@@ -22,7 +22,7 @@
             "title": "NerdLister",
             "icon": "assets/nerdlister.png",
             "backgroundColor": "#2F2C46",
-            "shortDescription": "Site web servant à faire des classements",
+            "shortDescription": "Site web servant à établir des classements",
             "techno": ["Figma", "React", "CSS"],
             "link": "nerdlister.html",
             "lang": "en"
@@ -31,7 +31,7 @@
             "title": "Manger de saison",
             "icon": "assets/projects/manger_de_saison.svg",
             "backgroundColor": "#E4F2E4",
-            "shortDescription": "Application mobile de calendrier des fruits et légumes de saisons",
+            "shortDescription": "Application mobile de calendrier des fruits et légumes de saison",
             "techno": ["Flutter", "Inkscape", "Figma"],
             "link": "manger_de_saison.html",
             "lang": "fr"
