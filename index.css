@@ -323,6 +323,10 @@
     background-size: 70% 70%;
 }
 
+.nerdlister {
+    background-size: 100% 100% !important;
+}
+
 .description-project {
     padding: 10px;
     height: 270px;

@@ -84,8 +84,8 @@ fetch('assets/projects.json')
   .then((data) => {
     const projects = data.projects;
     for (let i = 0; i < projects.length; i++) {
-        const linkTo = document.createElement("a"); 
-        // linkTo.ariaLabel = "Ouvrir la page du projet " + projects[i].title;
+        var projectTitle = projects[i].title;
+        const linkTo = document.createElement("a");
         linkTo.classList.add("project-link");
         linkTo.href = projects[i].link;
         linkTo.innerHTML = `
@@ -94,7 +94,7 @@ fetch('assets/projects.json')
                 <div class="icon-project" id="icon-project-${i}"></div>
                 <div class="description-project">
                     <div>
-                        <h4 id=title-project-${i}>${projects[i].title}</h4>
+                        <h4 id=title-project-${i}>${projectTitle}</h4>
                         <p>${projects[i].shortDescription}</p>
                     </div>
                     <div>
@@ -103,10 +103,11 @@ fetch('assets/projects.json')
                     </div>
                 </div>
             <div>
-        `
+        `;
         
-        
+
         div.appendChild(linkTo);
+
         document.getElementById(`icon-project-${i}`).style.backgroundColor = projects[i].backgroundColor;
         document.getElementById(`icon-project-${i}`).style.backgroundImage = `url(${projects[i].icon})`;
 
@@ -117,6 +118,8 @@ fetch('assets/projects.json')
 
         if (projects[i].title == "Manger de saison") {
             document.getElementById(`icon-project-${i}`).style.backgroundPosition = "bottom";
+        } else if (projects[i].title == "NerdLister") {
+            document.getElementById(`icon-project-${i}`).classList.add("nerdlister");
         }
 
         technos = (projects[i].techno).sort(); // Sort technologies alphabetically

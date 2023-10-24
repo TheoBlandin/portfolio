@@ -20,8 +20,8 @@
         },
         {
             "title": "NerdLister",
-            "icon": "assets/nerdlister.png",
-            "backgroundColor": "#2F2C46",
+            "icon": "assets/projects/nerdlister.svg",
+            "backgroundColor": "#ececec",
             "shortDescription": "Site web servant à établir des classements",
             "techno": ["Figma", "React", "CSS"],
             "link": "nerdlister.html",
