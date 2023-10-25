@@ -309,3 +309,8 @@ footer {
 .link:hover {
     transform: scale(1.05);
 }
+
+.legal {
+    text-decoration: none;
+    color: black;
+}

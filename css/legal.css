@@ -1,0 +1,26 @@
+.legal-title {
+    margin: auto;
+    width: fit-content;
+}
+
+.legal-div {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.legal-div h4 {
+    line-height: 4rem;
+}
+
+.legal-div p {
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .legal-div {
+        width: 90%;
+    }
+}
