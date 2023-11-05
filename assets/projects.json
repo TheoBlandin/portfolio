@@ -35,6 +35,15 @@
             "techno": ["Flutter", "Inkscape", "Figma"],
             "link": "manger_de_saison.html",
             "lang": "fr"
+        },
+        {
+            "title": "Galerie",
+            "icon": "assets/projects/galery.svg",
+            "backgroundColor": "#F2E4E4",
+            "shortDescription": "Galerie de mes créations graphiques",
+            "techno": ["Inkscape", "GIMP"],
+            "link": "galerie.html",
+            "lang": "fr"
         }
     ]
 }

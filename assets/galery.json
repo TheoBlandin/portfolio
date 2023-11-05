@@ -1,0 +1,44 @@
+{
+    "projects": [
+        {
+            "icon": "assets/gallery/cpbr.png",
+            "backgroundColor": "#DAEAFB",
+            "shortDescription": "Logo pour un particulier"
+        },
+        {
+            "icon": "assets/gallery/duck.png",
+            "backgroundColor": "#FDF6AF",
+            "shortDescription": "Dessin de canard"
+        },
+        {
+            "icon": "assets/gallery/korogu.png",
+            "backgroundColor": "#1f1f1f",
+            "shortDescription": "Korogu, personnage du jeu vidéo <span lang=\"en\"><i>The Legend of Zelda: Breath of the Wild</i></span>"
+        },
+        {
+            "icon": "assets/gallery/jerohm.png",
+            "backgroundColor": "#C5DCE7",
+            "shortDescription": "Logo d'un jeu vidéo réalisé dans le cadre scolaire"
+        },
+        {
+            "icon": "assets/gallery/crob.png",
+            "backgroundColor": "#F3F6F7",
+            "shortDescription": "Icône de crabe"
+        },
+        {
+            "icon": "assets/gallery/flowers.png",
+            "backgroundColor": "#b0f1b5",
+            "shortDescription": "Dessin de fleurs"
+        },
+        {
+            "icon": "assets/gallery/kavalkad.png",
+            "backgroundColor": "#B6B6B9",
+            "shortDescription": "Symbole d'équipe pour les 24h du Code"
+        },
+        {
+            "icon": "assets/gallery/poulpy.png",
+            "backgroundColor": "#C9E4E0",
+            "shortDescription": "Icône de projet réalisé dans le cadre scolaire"
+        }
+    ]
+}
