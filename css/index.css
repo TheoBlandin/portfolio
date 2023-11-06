@@ -1,56 +1,3 @@
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    .div-pic {
-        max-width: 400px !important;
-    }
-
-    .intro {
-        gap: 0px !important;
-        margin-top: 30px !important;
-    }
-
-    .presentation-title {
-        margin-bottom: 0px !important;
-    }
-
-    #sky {
-        height: calc(100vh + 40px) !important;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1124px) {
-    .intro {
-        gap: 20px !important;
-        /* margin-top: 85px !important; */
-    }
-
-    .presentation-title {
-        margin-bottom: 0px !important;
-    }
-
-    .div-pic {
-        max-width: 500px !important;
-    }
-
-    #sky {
-        height: calc(100vh + 180px) !important;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    #triangle {
-        border-right: 2000px solid transparent !important;
-    }
-}
-
-
 /* Pause button */
 
 #btn-pause {
@@ -363,4 +310,58 @@
 .techno-box:hover .info-box,
 .techno-box:focus .info-box {
     display: block; 
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .div-pic {
+        max-width: 400px;
+    }
+
+    .intro {
+        gap: 0px;
+        margin-top: 30px;
+    }
+
+    .presentation-title {
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    #sky {
+        height: calc(100vh + 70px);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+    .intro {
+        gap: 20px;
+    }
+
+    .presentation-title {
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+
+    .div-pic {
+        max-width: 500px;
+    }
+
+    #sky {
+        height: calc(100vh + 180px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #triangle {
+        border-right: 2000px solid transparent;
+    }
 }
