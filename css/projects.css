@@ -172,9 +172,9 @@ main {
     padding-right: 10px;
 }
 
-.back-link:hover {
+/* .back-link:hover {
     transform: scale(1) !important;
-}
+} */
 
 .gif {
     cursor: pointer;

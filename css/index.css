@@ -74,9 +74,9 @@
     transition: transform 0.2s;
 }
 
-.big-icon:hover {
+/* .big-icon:hover {
     transform: scale(1.1);
-}
+} */
 
 .div-pic {
     position: relative;
@@ -248,9 +248,9 @@
     position: relative;
 }
 
-.project:hover {
-    transform: scale(1.04);
-}
+/* .project:hover {
+    transform: scale(1.05);
+} */
 
 .vertical-scotch {
     transform: rotate(90deg);

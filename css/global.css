@@ -290,9 +290,9 @@ footer {
     margin: 10px;
 }
 
-.social-link:hover, .social-link:focus {
+/* .social-link:hover, .social-link:focus {
     transform: scale(1.1);
-}
+} */
 
 .link {
     /* margin: 0; */
@@ -306,9 +306,9 @@ footer {
     transition: transform 0.2s;
 }
 
-.link:hover {
+/* .link:hover {
     transform: scale(1.05);
-}
+} */
 
 .legal {
     text-decoration: none;

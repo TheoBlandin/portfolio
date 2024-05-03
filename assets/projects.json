@@ -37,6 +37,15 @@
             "lang": "fr"
         },
         {
+            "title": "SWAP",
+            "icon": "assets/projects/swap.svg",
+            "backgroundColor": "#FFC857",
+            "shortDescription": "Application mobile de calendrier des fruits et légumes de saison",
+            "techno": ["Figma"],
+            "link": "swap.html",
+            "lang": "fr"
+        },
+        {
             "title": "Galerie",
             "icon": "assets/projects/galery.svg",
             "backgroundColor": "#F2E4E4",
