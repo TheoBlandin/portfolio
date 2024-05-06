@@ -40,7 +40,7 @@
             "title": "SWAP",
             "icon": "assets/projects/swap.svg",
             "backgroundColor": "#FFC857",
-            "shortDescription": "Application mobile de calendrier des fruits et légumes de saison",
+            "shortDescription": "Mise en place de la démarche de Design Thinking sur une population spécifique",
             "techno": ["Figma"],
             "link": "swap.html",
             "lang": "fr"
